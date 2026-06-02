@@ -12,6 +12,7 @@ export default function Hero() {
             opacity: 1,
             transition: {
                 staggerChildren: 0.15,
+                delayChildren: 0.2,
             }
         }
     }
