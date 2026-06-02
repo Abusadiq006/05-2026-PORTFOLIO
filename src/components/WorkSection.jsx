@@ -23,8 +23,13 @@ export default function WorkSection() {
                     <div className="w-full h-full bg-slate-950 flex items-center justify-center font-mono text-slate-500">
                         [ Profile Image Area ]
                     </div>
+                    <div className="absolute bottom-3 left-3 bg-slate-950/80 backdrop-blur-md border border-emerald-500/30 px-3 py-1.5 rounded-full flex items-center gap-2">
+                        <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+                        <span className="text-xs uppercase tracking-wider font-mono text-emerald-400">System: Active</span>
+                    </div>
                 </div>
             
+                <h3 className="text-2xl font-bold tracking-tight text-white">Abusadiq</h3>
             </motion.div>
             </div>
         </section>
