@@ -66,6 +66,22 @@ return (
         >
           {HERO_DATA.subTitle}
         </motion.p>
+
+        {/* Action Call Controls */}
+        <motion.div variants={itemVariants} className="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-4">
+          <a
+            href="#projects"
+            className="px-6 py-3 rounded-xl bg-white text-slate-950 font-medium text-sm hover:bg-cyan-400 transition-all duration-300 shadow-lg shadow-cyan-500/5 transform hover:-translate-y-0.5 active:translate-y-0"
+          >
+            Explore Systems Architecture ↓
+          </a>
+          <a
+            href="#contact"
+            className="px-6 py-3 rounded-xl bg-slate-900 border border-slate-800 text-slate-300 font-medium text-sm hover:bg-slate-800 hover:text-white transition-all duration-300 font-mono"
+          >
+            Initialize Connection()
+          </a>
+        </motion.div>
       </motion.div>
     </section>
     )
