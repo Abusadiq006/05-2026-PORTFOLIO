@@ -31,6 +31,9 @@ export default function WorkSection() {
             
                 <h3 className="text-2xl font-bold tracking-tight text-white">Abusadiq</h3>
                 <p className="text-sm font-mono text-cyan-400 mt-1">Full-Stack Software Engineer</p>
+                <p className="text-sm text-slate-400 mt-3 leading-relaxed">
+                    Specialized in engineering modern web applications, high-performance API architectures, and bulletproof database integration structures.
+                </p>
             </motion.div>
             </div>
         </section>
