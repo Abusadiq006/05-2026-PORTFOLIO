@@ -5,5 +5,6 @@ export const HERO_DATA = {
     metrics: [
         { label: "Frontend Engines", value: "Next.js / React / Vue" },
         { label: "Backend Core", value: "Node.js / Nest.js / Express" },
+        { label: "Data Integrity", value: "Supabase / Mongo / Firebase" }
     ]
 }
