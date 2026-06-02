@@ -57,7 +57,14 @@ export default function WorkSection() {
                         viewport={{ once: true, margin: "-100px" }}
                         transition={{ duration: 0.6, delay: index * 0.1, ease: "easeOut" }}
                         className="bg-slate-900/20 border border-slate-800/60 rounded-3xl overflow-hidden hover:border-slate-700/80 transition-all duration-300 flex flex-col md:flex-row group shadow-xl"
-            ></motion.div>
+            >
+                <div className="md:w-2/5 relative bg-slate-950 overflow-hidden min-h-[220px]">
+                <img 
+                  src={project.image} 
+                  alt={project.title}
+                  className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700 ease-in-out"
+                />
+            </motion.div>
         </section>
     )
 }
