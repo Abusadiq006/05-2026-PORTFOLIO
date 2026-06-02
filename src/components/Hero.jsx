@@ -82,6 +82,25 @@ return (
             Initialize Connection()
           </a>
         </motion.div>
+
+        {/* System Footprint Architecture Matrix Grid */}
+        <motion.div 
+          variants={itemVariants}
+          className="pt-16 border-t border-slate-900 grid grid-cols-1 sm:grid-cols-3 gap-6 text-left max-w-3xl"
+        >
+          {HERO_DATA.metrics.map((metric, idx) => (
+            <div key={idx} className="space-y-1 group">
+              <div className="text-xs font-mono text-slate-500 uppercase tracking-wider">
+                {metric.label}
+              </div>
+              <div className="text-sm font-semibold text-slate-300 group-hover:text-cyan-400 transition-colors duration-200">
+                {metric.value}
+              </div>
+            </div>
+          ))}
+        </motion.div>
+
+        
       </motion.div>
     </section>
     )
