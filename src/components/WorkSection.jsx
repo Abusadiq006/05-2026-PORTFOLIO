@@ -94,6 +94,14 @@ export default function WorkSection() {
                   >
                     Live System <span>→</span>
                   </a>
+                  <a 
+                    href={project.githubUrl} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="flex-1 text-center bg-slate-800 text-slate-200 font-medium text-sm py-2.5 px-4 rounded-xl border border-slate-700 hover:bg-slate-700 transition-all duration-300 flex items-center justify-center gap-2"
+                  >
+                    Source Code
+                  </a>
                 </div>
             </motion.div>
         </section>
