@@ -20,7 +20,9 @@ export default function WorkSection() {
             >   <div className="absolute -inset-0.5 bg-gradient-to-r from-emerald-500 to-cyan-500 rounded-3xl opacity-0 group-hover:opacity-5 transition duration-700 blur" />    
 
                 <div className="relative w-full aspect-square rounded-2xl overflow-hidden bg-slate-800 border border-slate-700/50 mb-6">
-                
+                    <div className="w-full h-full bg-slate-950 flex items-center justify-center font-mono text-slate-500">
+                        [ Profile Image Area ]
+                    </div>
                 </div>
             
             </motion.div>
