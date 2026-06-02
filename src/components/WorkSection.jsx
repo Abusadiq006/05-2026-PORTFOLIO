@@ -41,6 +41,13 @@ export default function WorkSection() {
                 </div>
             </motion.div>
             </div>
+
+            {/* RIGHT SIDE: SCROLLABLE DYNAMIC PROJECTS ARCHITECTURE */}
+            <div className="lg:col-span-8 space-y-12">
+                <div className="space-y-2 mb-8">
+                    <span className="text-xs font-mono uppercase tracking-widest text-cyan-500">02 // Selected Architecture</span>
+                    <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-white">Production-Ready Applications</h2>
+                </div>
         </section>
     )
 }
