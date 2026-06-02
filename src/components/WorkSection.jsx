@@ -85,7 +85,16 @@ export default function WorkSection() {
                         </div>
                 </div>
 
-                <div className="flex items-center gap-4 pt-4 border-t border-slate-800/50"></div>
+                <div className="flex items-center gap-4 pt-4 border-t border-slate-800/50">
+                    <a 
+                    href={project.liveUrl} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="flex-1 text-center bg-white text-slate-950 font-medium text-sm py-2.5 px-4 rounded-xl hover:bg-cyan-400 transition-all duration-300 shadow-md transform active:scale-95 flex items-center justify-center gap-2"
+                  >
+                    Live System <span>→</span>
+                  </a>
+                </div>
             </motion.div>
         </section>
     )
