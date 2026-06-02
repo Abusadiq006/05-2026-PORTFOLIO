@@ -13,7 +13,10 @@ export default function Hero() {
             transition: {
                 staggerChildren: 0.15,
                 delayChildren: 0.2,
-            }
-        }
+            },
+        },
     }
-}
+
+    // Text Reveal line item configuration using smooth spring mechanics
+    const itemVariants = {}
+}   
