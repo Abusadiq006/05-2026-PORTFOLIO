@@ -34,6 +34,11 @@ export default function WorkSection() {
                 <p className="text-sm text-slate-400 mt-3 leading-relaxed">
                     Specialized in engineering modern web applications, high-performance API architectures, and bulletproof database integration structures.
                 </p>
+
+                <div className="pt-6 border-t border-slate-800/80 mt-6 flex gap-4 text-xs font-mono text-slate-400">
+                    <div><span className="text-white font-bold">5+</span> Systems Live</div>
+                    <div><span className="text-white font-bold">99.9%</span> API Uptime</div>
+                </div>
             </motion.div>
             </div>
         </section>
