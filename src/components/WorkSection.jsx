@@ -60,12 +60,17 @@ export default function WorkSection() {
             >
                 <div className="md:w-2/5 relative bg-slate-950 overflow-hidden min-h-[220px]">
                 <img 
-                  src={project.image} 
-                  alt={project.title}
-                  className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700 ease-in-out"
-                />
-                <div className="absolute top-3 left-3 z-20 bg-slate-900/90 border border-indigo-500/30 font-mono text-[10px] text-indigo-400 px-2.5 py-1 rounded">
-                  🛡️ {project.testing}
+                    src={project.image} 
+                        alt={project.title}
+                        className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700 ease-in-out"
+                    />
+                    <div className="absolute top-3 left-3 z-20 bg-slate-900/90 border border-indigo-500/30 font-mono text-[10px] text-indigo-400 px-2.5 py-1 rounded">
+                        🛡️ {project.testing}
+                    </div>
+                </div>
+
+                <div className="p-6 sm:p-8 md:w-3/5 flex flex-col justify-between space-y-6">
+                
                 </div>
             </motion.div>
         </section>
