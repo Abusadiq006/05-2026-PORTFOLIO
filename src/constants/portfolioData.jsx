@@ -8,3 +8,5 @@ export const HERO_DATA = {
         { label: "Data Integrity", value: "Supabase / Mongo / Firebase" }
     ]
 }
+
+export const PROJECTS = []
