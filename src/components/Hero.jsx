@@ -58,6 +58,14 @@ return (
         >
             {HERO_DATA.mainTitle}
         </motion.h1>
+
+        {/* Subtitle Body Description */}
+        <motion.p 
+          variants={itemVariants}
+          className="text-base sm:text-lg md:text-xl text-slate-400 font-normal max-w-2xl leading-relaxed mx-auto lg:mx-0"
+        >
+          {HERO_DATA.subTitle}
+        </motion.p>
       </motion.div>
     </section>
     )
