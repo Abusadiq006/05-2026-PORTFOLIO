@@ -31,5 +31,7 @@ export default function Hero() {
     },
 }
 
-
+return (
+    <section className="relative min-h-[90vh] flex flex-col justify-center items-center px-4 sm:px-8 lg:px-16 overflow-hidden bg-slate-950 text-slate-100 border-b border-slate-900"></section>
+    )
 }
