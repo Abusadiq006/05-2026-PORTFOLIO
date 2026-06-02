@@ -18,5 +18,10 @@ export default function Hero() {
     }
 
     // Text Reveal line item configuration using smooth spring mechanics
-    const itemVariants = {}
+    const itemVariants = {
+        hidden: { opacity: 0, y: 30 },
+        visible: {
+            
+        }
+    }
 }   
