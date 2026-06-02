@@ -30,6 +30,7 @@ export default function WorkSection() {
                 </div>
             
                 <h3 className="text-2xl font-bold tracking-tight text-white">Abusadiq</h3>
+                <p className="text-sm font-mono text-cyan-400 mt-1">Full-Stack Software Engineer</p>
             </motion.div>
             </div>
         </section>
