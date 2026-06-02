@@ -50,6 +50,14 @@ return (
             {HERO_DATA.accent}
           </span>
         </motion.div>
+
+        {/* The Text Reveal Title Header */}
+        <motion.h1 
+          variants={itemVariants}
+          className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight leading-[1.1] text-transparent bg-clip-text bg-gradient-to-b from-white via-slate-100 to-slate-400 max-w-4xl"
+        >
+            {HERO_DATA.mainTitle}
+        </motion.h1>
       </motion.div>
     </section>
     )
