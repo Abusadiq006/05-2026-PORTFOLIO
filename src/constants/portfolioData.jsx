@@ -22,4 +22,16 @@ export const PROJECTS = [
     githubUrl: "https://github.com/Abusadiq006/bridge-pay-dashboard",
     image: "https://images.unsplash.com/photo-1616077168079-7e05a677ef2c?q=80&w=600&auto=format&fit=crop" // Temp premium placeholders until your custom images are in public/
   },
+  {
+    id: 2,
+    title: "FarmApp Ecosystem",
+    category: "Agritech Platform",
+    description: "A full-stack agricultural production management system with deep payment gateway integrations for harvest tracking and supply chain sales.",
+    frontend: ["React.js", "TailwindCSS", "HTML5"],
+    backend: ["Node.js", "Express.js", "MongoDB"],
+    testing: "Insomnia Verified",
+    liveUrl: "https://farmapp.vercel.app",
+    githubUrl: "https://github.com/Abusadiq006/farmapp",
+    image: "https://images.unsplash.com/photo-1593113598332-cd288d649433?q=80&w=600&auto=format&fit=crop"
+  }
 ]
