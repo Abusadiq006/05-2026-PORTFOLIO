@@ -42,7 +42,15 @@ return (
         initial="hidden"
         animate="visible"
         className="max-w-5xl w-full space-y-8 z-10 text-center lg:text-left"
-      ></motion.div>
+      >
+        {/* Core System Tracking Code */}
+        <motion.div variants={itemVariants} className="flex items-center justify-center lg:justify-start gap-3">
+          <span className="w-2 h-2 rounded-full bg-cyan-400 animate-ping" />
+          <span className="text-xs font-mono tracking-widest text-cyan-400 uppercase">
+            {HERO_DATA.accent}
+          </span>
+        </motion.div>
+      </motion.div>
     </section>
     )
 }
