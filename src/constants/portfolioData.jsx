@@ -4,5 +4,6 @@ export const HERO_DATA = {
     subTitle: "Full-Stack Software Architect specializing in resilient distributed systems, secure payment architectures, and hyper-responsive user ecosystems.",
     metrics: [
         { label: "Frontend Engines", value: "Next.js / React / Vue" },
+        { label: "Backend Core", value: "Node.js / Nest.js / Express" },
     ]
 }
