@@ -17,7 +17,9 @@ export default function WorkSection() {
                         whileInView={{ opacity: 1, y: 0 }}
                         className="bg-slate-900/40 border border-slate-800 rounded-3xl p-6 backdrop-blur-md shadow-2xl relative overflow-hidden group"
                         transition={{ duration: 0.6, ease: "easeOut" }}
-          ></motion.div>
+            >   <div className="absolute -inset-0.5 bg-gradient-to-r from-emerald-500 to-cyan-500 rounded-3xl opacity-0 group-hover:opacity-5 transition duration-700 blur" />    
+            
+            </motion.div>
             </div>
         </section>
     )
