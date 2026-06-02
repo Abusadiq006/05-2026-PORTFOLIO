@@ -75,7 +75,14 @@ export default function WorkSection() {
                         <h4 className="text-2xl font-bold text-white mt-1 group-hover:text-cyan-300 transition-colors duration-200">{project.title}</h4>
                         <p className="text-sm text-slate-400 mt-3 leading-relaxed">{project.description}</p>
 
-                        <div className="mt-4 flex flex-wrap gap-2"></div>
+                        <div className="mt-4 flex flex-wrap gap-2">
+                            {project.frontend.map(tech => (
+                                  <span key={tech} className="bg-slate-800/50 text-slate-300 px-2.5 py-0.5 rounded-md text-xs border border-slate-700/30 font-mono">{tech}</span>
+                                ))}
+                                {project.backend.map(tech => (
+                                  <span key={tech} className="bg-slate-950 text-cyan-400/90 px-2.5 py-0.5 rounded-md text-xs border border-cyan-950 font-mono">{tech}</span>
+                                ))}
+                        </div>
                 </div>
             </motion.div>
         </section>
