@@ -36,6 +36,13 @@ return (
 
         {/* BACKGROUND GRAPHIC: Ambient Kinetic Glow */}
         <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-gradient-to-tr from-cyan-500/10 to-indigo-500/10 rounded-full blur-[120px] pointer-events-none animate-pulse-slow" />
+
+        <motion.div
+        variants={containerVariants}
+        initial="hidden"
+        animate="visible"
+        className="max-w-5xl w-full space-y-8 z-10 text-center lg:text-left"
+      ></motion.div>
     </section>
     )
 }
