@@ -8,5 +8,8 @@ export default function Hero() {
     // Container animation configuration that controls children stagger timings
     const containerVariants = {
         hidden: { opacity: 0},
+        visible: {
+            
+        }
     }
 }
