@@ -1,11 +1,17 @@
 import Image from "next/image";
 import Hero from "@/components/Hero";
+import WorkSection from "@/components/WorkSection"
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-slate-950 selection:bg-cyan-500/20 selection:text-cyan-300">
       {/* Section 01: Hero Entrypoint Gateway */}
-    
+      <Hero />
+
+        {/* Section 02: Selected Architecture Split Grid */}
+      <div id="projects">
+        <WorkSection />
+      </div>
         <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
           <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
             Farmer Abusadiq
