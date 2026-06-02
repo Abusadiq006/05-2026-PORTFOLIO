@@ -70,7 +70,10 @@ export default function WorkSection() {
                 </div>
 
                 <div className="p-6 sm:p-8 md:w-3/5 flex flex-col justify-between space-y-6">
-                
+                    <div>
+                        <span className="text-xs font-mono text-cyan-400 tracking-wider uppercase">{project.category}</span>
+                        <h4 className="text-2xl font-bold text-white mt-1 group-hover:text-cyan-300 transition-colors duration-200">{project.title}</h4>
+                        <p className="text-sm text-slate-400 mt-3 leading-relaxed">{project.description}</p>
                 </div>
             </motion.div>
         </section>
