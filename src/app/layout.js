@@ -1,3 +1,4 @@
+// src/app/layout.js
 import { Geist, Geist_Mono } from "next/font/google";
 import "@/styles/global.css";
 
@@ -22,7 +23,10 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      {/* children represents whatever page is currently being viewed */}
+      <body className="min-h-full flex flex-col bg-slate-950 text-slate-100">
+        {children}
+      </body>
     </html>
   );
 }
