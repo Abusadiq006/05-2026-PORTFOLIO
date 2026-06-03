@@ -22,3 +22,12 @@ const SKILL_CATEGORIES = [
     skills: ["Supabase", "PostgreSQL", "MongoDB", "Firebase", "Vercel / Render Deployment"]
   }
 ];
+
+export default function Expertise() {
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: { staggerChildren: 0.1, delayChildren: 0.1 }
+    }
+  };
