@@ -7,3 +7,9 @@ const PRINCIPLES = [
   { title: "Performance-First Architecture", desc: "Optimizing Core Web Vitals using Next.js Server Components, strict route caching, and ultra-fast asset delivery." },
   { title: "Test-Driven Resiliency", desc: "Validating API endpoints via structured testing environments like Postman and Insomnia to maintain flawless uptimes." }
 ]
+
+const SKILL_CATEGORIES = [
+  {
+    title: "Backend Core & Routing",
+    skills: ["Node.js", "Express.js", "Next.js APIs", "RESTful Systems", "Middleware Architecture"]
+  }
