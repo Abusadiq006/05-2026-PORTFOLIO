@@ -44,5 +44,12 @@ const itemVariants = {
   return (
     <section id="about" className="py-24 bg-slate-950 text-slate-100 px-4 sm:px-8 lg:px-16 border-t border-slate-900">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
-        
-      </div>
+
+        {/* LEFT COLUMN: Narrative & Engineering Principles */}
+        <motion.div 
+          initial={{ opacity: 0, x: -30 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.6 }}
+          className="lg:col-span-5 space-y-8"
+        >
