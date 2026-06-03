@@ -17,3 +17,8 @@ const SKILL_CATEGORIES = [
     title: "Frontend Engineering & Systems",
     skills: ["React", "Next.js App Router", "Tailwind CSS", "Framer Motion", "Responsive Ecosystems"]
   },
+  {
+    title: "Persistence & Cloud Infra",
+    skills: ["Supabase", "PostgreSQL", "MongoDB", "Firebase", "Vercel / Render Deployment"]
+  }
+];
