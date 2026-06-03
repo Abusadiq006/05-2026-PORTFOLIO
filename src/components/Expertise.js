@@ -40,3 +40,9 @@ const itemVariants = {
       transition: { type: "spring", stiffness: 60, damping: 12 }
     }
   }
+
+  return (
+    <section id="about" className="py-24 bg-slate-950 text-slate-100 px-4 sm:px-8 lg:px-16 border-t border-slate-900">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+        
+      </div>
