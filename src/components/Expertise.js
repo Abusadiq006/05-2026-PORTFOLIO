@@ -12,4 +12,8 @@ const SKILL_CATEGORIES = [
   {
     title: "Backend Core & Routing",
     skills: ["Node.js", "Express.js", "Next.js APIs", "RESTful Systems", "Middleware Architecture"]
-  }
+  },
+  {
+    title: "Frontend Engineering & Systems",
+    skills: ["React", "Next.js App Router", "Tailwind CSS", "Framer Motion", "Responsive Ecosystems"]
+  },
