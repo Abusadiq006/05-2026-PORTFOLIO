@@ -46,6 +46,8 @@ return (
               <span>Encryption Status: TLS 1.3 / End-to-End</span>
             </div>
           </div>
+
+          {/* Social Network Access Nodes */}
       </div>
       </section>
 )
