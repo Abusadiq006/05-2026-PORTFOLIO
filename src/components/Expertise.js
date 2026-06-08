@@ -62,4 +62,10 @@ const itemVariants = {
             I build systems that scale cleanly without breaking under heavy loads. Bridging the gap between bulletproof backend pipelines and hyper-responsive user interfaces, I specialize in shipping end-to-end applications designed for production stability.
           </p>
 
-            
+            <div className="space-y-6 pt-4">
+            {PRINCIPLES.map((p, idx) => (
+              <div key={idx} className="border-l-2 border-slate-800 hover:border-cyan-500 pl-4 transition-colors duration-300 py-1">
+                <h4 className="text-sm font-mono text-slate-200 font-semibold uppercase tracking-wider">{p.title}</h4>
+                <p className="text-xs sm:text-sm text-slate-400 mt-1.5 leading-relaxed">{p.desc}</p>
+              </div>
+            ))}
