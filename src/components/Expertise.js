@@ -79,4 +79,9 @@ const itemVariants = {
               whileInView="visible"
               viewport={{ once: true, margin: "-100px" }}
               className="lg:col-span-7 space-y-8 lg:pl-6"
-          ></motion.div>
+            >
+              <div className="space-y-2">
+            <span className="text-xs font-mono uppercase tracking-widest text-indigo-400">SYS // PRODUCTION TOOLBELT</span>
+            <h3 className="text-2xl font-bold text-white">Technological Matrix</h3>
+            </div>
+            </motion.div>
