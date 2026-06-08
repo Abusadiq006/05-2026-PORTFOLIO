@@ -32,7 +32,9 @@ return (
             <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-white">Initialize Connection()</h2>
           </div>
 
-          
+          <p className="text-slate-400 text-sm sm:text-base leading-relaxed">
+            Have an architecture that needs engineering, a legacy system that needs refactoring, or a full-stack platform waiting to be brought to life? Drop a packet below.
+          </p>
       </div>
       </section>
 )
