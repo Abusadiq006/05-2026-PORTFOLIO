@@ -103,3 +103,8 @@ const itemVariants = {
                 ))}
               </div>
             </motion.div>
+
+            </div>
+    </section>
+  );
+}
