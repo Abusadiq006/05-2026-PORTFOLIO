@@ -59,6 +59,13 @@ return (
         </div>
 
         {/* RIGHT COLUMN: INTERACTIVE CONNECTION TERMINAL */}
+        <div className="lg:col-span-7">
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="bg-slate-900/30 border border-slate-800/80 rounded-3xl p-6 sm:p-8 backdrop-blur-md relative"
+          ></motion.div>
       </div>
       </section>
 )
