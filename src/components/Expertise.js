@@ -58,4 +58,8 @@ const itemVariants = {
             <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-white">Architectural Philosophy</h2>
           </div>
 
+          <p className="text-slate-400 text-base sm:text-lg leading-relaxed">
+            I build systems that scale cleanly without breaking under heavy loads. Bridging the gap between bulletproof backend pipelines and hyper-responsive user interfaces, I specialize in shipping end-to-end applications designed for production stability.
+          </p>
+
             
