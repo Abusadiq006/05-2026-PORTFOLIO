@@ -3,12 +3,12 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 
 export default function Contact() {
-    const [formData, setFormData] = useState({ name: "", email: "", message: "" });
+  const [formData, setFormData] = useState({ name: "", email: "", message: "" });
   const [status, setStatus] = useState("IDLE"); // IDLE, PENDING, SUCCESS, ERROR
 
   const handleSubmit = async (e) => {
-    e.preventDefault()
-    setStatus("PENDING")
+    e.preventDefault();
+    setStatus("PENDING");
 
     try {
       // Form handling using Next.js route or Server Action link
@@ -19,23 +19,23 @@ export default function Contact() {
     } catch (error) {
       setStatus("ERROR");
     }
-  }
+  };
 
-return (
+  return (
     <section id="contact" className="py-24 bg-slate-950 text-slate-100 px-4 sm:px-8 lg:px-16 border-t border-slate-900">
       <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
-
+        
         {/* LEFT COLUMN: SYSTEM TELEMETRY / CALL TO ACTION */}
         <div className="lg:col-span-5 space-y-6">
           <div className="space-y-2">
             <span className="text-xs font-mono uppercase tracking-widest text-cyan-500">05 // SECURE GATEWAY</span>
             <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-white">Initialize Connection()</h2>
           </div>
-
+          
           <p className="text-slate-400 text-sm sm:text-base leading-relaxed">
             Have an architecture that needs engineering, a legacy system that needs refactoring, or a full-stack platform waiting to be brought to life? Drop a packet below.
           </p>
-          
+
           <div className="p-4 rounded-xl bg-slate-900/50 border border-slate-900 font-mono text-xs text-slate-400 space-y-2">
             <div className="flex items-center gap-2">
               <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse" />
@@ -67,7 +67,8 @@ return (
             className="bg-slate-900/30 border border-slate-800/80 rounded-3xl p-6 sm:p-8 backdrop-blur-md relative"
           >
             <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="space-y-1.5">
+              
+              <div className="space-y-1.5">
                 <label className="text-xs font-mono text-slate-400 uppercase tracking-wider">Client Identifier (Name)</label>
                 <input 
                   type="text" 
@@ -122,7 +123,12 @@ return (
                   ⚠️ ERROR: Network pipeline dropped connection. Please check input parameters.
                 </div>
               )}
+
             </form>
           </motion.div>
+        </div>
+
       </div>
-      </section>
+    </section>
+  );
+}
