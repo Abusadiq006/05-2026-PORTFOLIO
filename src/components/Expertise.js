@@ -55,6 +55,7 @@ const itemVariants = {
         >
           <div className="space-y-2">
             <span className="text-xs font-mono uppercase tracking-widest text-cyan-500">01 // CORE COMPETENCY</span>
+            <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-white">Architectural Philosophy</h2>
           </div>
 
             
