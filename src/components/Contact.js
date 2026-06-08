@@ -66,7 +66,19 @@ return (
             viewport={{ once: true }}
             className="bg-slate-900/30 border border-slate-800/80 rounded-3xl p-6 sm:p-8 backdrop-blur-md relative"
           >
-            <form onSubmit={handleSubmit} className="space-y-6"></form>
+            <form onSubmit={handleSubmit} className="space-y-6">
+                <div className="space-y-1.5">
+                <label className="text-xs font-mono text-slate-400 uppercase tracking-wider">Client Identifier (Name)</label>
+                <input 
+                  type="text" 
+                  required
+                  value={formData.name}
+                  onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                  className="w-full bg-slate-950/60 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-600 focus:outline-none focus:border-cyan-500/80 focus:ring-1 focus:ring-cyan-500/30 transition-all duration-200 font-sans"
+                  placeholder="e.g., John Doe"
+                />
+              </div>
+            </form>
           </motion.div>
       </div>
       </section>
