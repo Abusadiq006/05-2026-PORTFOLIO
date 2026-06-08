@@ -69,3 +69,7 @@ const itemVariants = {
                 <p className="text-xs sm:text-sm text-slate-400 mt-1.5 leading-relaxed">{p.desc}</p>
               </div>
             ))}
+            </div>
+            </motion.div>
+
+            {/* RIGHT COLUMN: Categorized Tech Stack Matrix */}
