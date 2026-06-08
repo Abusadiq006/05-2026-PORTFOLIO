@@ -41,6 +41,11 @@ return (
               <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse" />
               <span>Response SLA: &lt; 24 Hours</span>
             </div>
+            <div className="flex items-center gap-2">
+              <span className="w-1.5 h-1.5 rounded-full bg-indigo-400" />
+              <span>Encryption Status: TLS 1.3 / End-to-End</span>
+            </div>
+          </div>
       </div>
       </section>
 )
