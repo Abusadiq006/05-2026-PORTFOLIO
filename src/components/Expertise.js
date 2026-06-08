@@ -53,5 +53,8 @@ const itemVariants = {
           transition={{ duration: 0.6 }}
           className="lg:col-span-5 space-y-8"
         >
+          <div className="space-y-2">
+            <span className="text-xs font-mono uppercase tracking-widest text-cyan-500">01 // CORE COMPETENCY</span>
+          </div>
 
             
