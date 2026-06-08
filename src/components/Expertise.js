@@ -73,3 +73,10 @@ const itemVariants = {
             </motion.div>
 
             {/* RIGHT COLUMN: Categorized Tech Stack Matrix */}
+            <motion.div 
+              variants={containerVariants}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, margin: "-100px" }}
+              className="lg:col-span-7 space-y-8 lg:pl-6"
+          ></motion.div>
