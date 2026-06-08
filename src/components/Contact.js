@@ -48,6 +48,15 @@ return (
           </div>
 
           {/* Social Network Access Nodes */}
+          <div className="pt-4 flex items-center gap-4 font-mono text-xs">
+            <a href="https://github.com/Abusadiq006" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white transition-colors duration-200">
+              [ GitHub ]
+            </a>
+            <a href="#" className="text-slate-400 hover:text-white transition-colors duration-200">
+              [ LinkedIn ]
+            </a>
+          </div>
+        </div>
       </div>
       </section>
 )
