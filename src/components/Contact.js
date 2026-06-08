@@ -112,7 +112,11 @@ return (
               </button>
 
               {/* Terminal Feedback Readout Logs */}
-              
+              {status === "SUCCESS" && (
+                <div className="mt-4 p-3 rounded-xl bg-emerald-950/30 border border-emerald-500/30 font-mono text-xs text-emerald-400">
+                  ✓ SUCCESS: Message packet successfully parsed and written to remote database.
+                </div>
+              )}
             </form>
           </motion.div>
       </div>
