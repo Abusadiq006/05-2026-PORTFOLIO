@@ -110,10 +110,10 @@ return (
               >
                 {status === "PENDING" ? "Transmission In Progress..." : "Dispatch Packet →"}
               </button>
+
+              {/* Terminal Feedback Readout Logs */}
+              
             </form>
           </motion.div>
       </div>
       </section>
-
-      })
-)
