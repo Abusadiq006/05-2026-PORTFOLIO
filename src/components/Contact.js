@@ -117,6 +117,11 @@ return (
                   ✓ SUCCESS: Message packet successfully parsed and written to remote database.
                 </div>
               )}
+              {status === "ERROR" && (
+                <div className="mt-4 p-3 rounded-xl bg-rose-950/30 border border-rose-500/30 font-mono text-xs text-rose-400">
+                  ⚠️ ERROR: Network pipeline dropped connection. Please check input parameters.
+                </div>
+              )}
             </form>
           </motion.div>
       </div>
