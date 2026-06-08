@@ -35,6 +35,12 @@ return (
           <p className="text-slate-400 text-sm sm:text-base leading-relaxed">
             Have an architecture that needs engineering, a legacy system that needs refactoring, or a full-stack platform waiting to be brought to life? Drop a packet below.
           </p>
+          
+          <div className="p-4 rounded-xl bg-slate-900/50 border border-slate-900 font-mono text-xs text-slate-400 space-y-2">
+            <div className="flex items-center gap-2">
+              <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse" />
+              <span>Response SLA: &lt; 24 Hours</span>
+            </div>
       </div>
       </section>
 )
