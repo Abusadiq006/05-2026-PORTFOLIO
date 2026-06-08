@@ -102,8 +102,18 @@ return (
                   placeholder="Define scope, parameters, or project objectives..."
                 />
               </div>
+
+              <button
+                type="submit"
+                disabled={status === "PENDING"}
+                className="w-full bg-white text-slate-950 font-medium text-sm py-3 px-4 rounded-xl hover:bg-cyan-400 transition-all duration-300 shadow-md transform active:scale-[0.98] flex items-center justify-center gap-2 disabled:opacity-50 disabled:pointer-events-none font-mono"
+              >
+                {status === "PENDING" ? "Transmission In Progress..." : "Dispatch Packet →"}
+              </button>
             </form>
           </motion.div>
       </div>
       </section>
+
+      })
 )
