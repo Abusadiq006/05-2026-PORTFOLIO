@@ -84,4 +84,22 @@ const itemVariants = {
             <span className="text-xs font-mono uppercase tracking-widest text-indigo-400">SYS // PRODUCTION TOOLBELT</span>
             <h3 className="text-2xl font-bold text-white">Technological Matrix</h3>
             </div>
+
+            <div className="space-y-8">
+            {SKILL_CATEGORIES.map((category, catIdx) => (
+              <motion.div variants={itemVariants} key={catIdx} className="space-y-3 bg-slate-900/20 border border-slate-900 p-5 rounded-2xl">
+                <h4 className="text-xs font-mono text-slate-500 uppercase tracking-widest font-bold">{category.title}</h4>
+                <div className="flex flex-wrap gap-2.5">
+                  {category.skills.map((skill, skillIdx) => (
+                    <span 
+                      key={skillIdx} 
+                      className="bg-slate-900 border border-slate-800 text-slate-300 font-mono text-xs px-3 py-1.5 rounded-xl hover:border-cyan-500/50 hover:text-white transform hover:-translate-y-0.5 transition-all duration-200 cursor-default"
+                    >
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+                </motion.div>
+                ))}
+              </div>
             </motion.div>
