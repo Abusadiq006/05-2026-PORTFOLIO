@@ -57,6 +57,8 @@ return (
             </a>
           </div>
         </div>
+
+        {/* RIGHT COLUMN: INTERACTIVE CONNECTION TERMINAL */}
       </div>
       </section>
 )
