@@ -52,4 +52,9 @@ export async function sendContactEmail(
           <p style="white-space: pre-wrap;">${message}</p>
         </div>
       `,
-    });
+    })
+
+    if (error) {
+      console.error("Resend error:", error);
+      return { success: false, message: "Failed to send email. Try again later." };
+    }
