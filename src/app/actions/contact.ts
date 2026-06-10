@@ -18,3 +18,6 @@ export type ActionState = {
 export async function sendContactEmail(
   prevState: ActionState,
   formData: FormData
+): Promise<ActionState> {
+  const email = formData.get("email") as string
+  const message = formData.get("message") as string
