@@ -27,3 +27,6 @@ export async function sendContactEmail(
   if (!email || !email.includes("@")) {
     errors.email = "Please enter a valid email address.";
   }
+  if (!message || message.trim().length < 10) {
+    errors.message = "Message must be at least 10 characters long.";
+  }
