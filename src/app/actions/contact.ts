@@ -34,3 +34,22 @@ export async function sendContactEmail(
   if (Object.keys(errors).length > 0) {
     return { success: false, message: "Validation failed.", errors };
   }
+
+  // 2. Resend Execution
+  try {
+    const { data, error } = await resend.emails.send({
+      // Note: On Resend's free tier without a custom domain, 
+      // you must use 'onboarding@resend.dev' and send only to yourself.
+      from: "Contact Form <onboarding@resend.dev>",
+      to: ["your-personal-email@gmail.com"], // ← Your email here
+      replyTo: email, 
+      subject: `New Contact Form Submission from ${email}`,
+      html: `
+        <div style="font-family: sans-serif; padding: 20px; line-height: 1.5;">
+          <h2>New Message Received</h2>
+          <p><strong>From:</strong> ${email}</p>
+          <hr style="border: 0; border-top: 1px solid #eee;" />
+          <p style="white-space: pre-wrap;">${message}</p>
+        </div>
+      `,
+    });
