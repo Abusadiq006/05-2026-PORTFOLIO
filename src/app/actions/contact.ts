@@ -14,3 +14,7 @@ export type ActionState = {
     message?: string
   }
 }
+
+export async function sendContactEmail(
+  prevState: ActionState,
+  formData: FormData
