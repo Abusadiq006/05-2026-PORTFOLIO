@@ -60,3 +60,7 @@ export async function sendContactEmail(
     }
     return { success: true, message: "Your message has been sent successfully!" };
   } catch (err) {
+    console.error("Server Action Exception:", err);
+    return { success: false, message: "An unexpected error occurred." };
+  }
+}
