@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" role="img" aria-labelledby="title desc">
+  <title id="title">BridgePay dashboard preview</title>
+  <desc id="desc">A stylized fintech dashboard interface with payment cards, charts, and ledger rows.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop stop-color="#020617"/>
+      <stop offset="0.55" stop-color="#0f172a"/>
+      <stop offset="1" stop-color="#083344"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" x2="1">
+      <stop stop-color="#22d3ee"/>
+      <stop offset="1" stop-color="#34d399"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="620" fill="url(#bg)"/>
+  <circle cx="710" cy="85" r="190" fill="#22d3ee" opacity="0.12"/>
+  <circle cx="150" cy="560" r="220" fill="#34d399" opacity="0.10"/>
+  <rect x="82" y="72" width="736" height="476" rx="22" fill="#0f172a" stroke="#334155"/>
+  <rect x="82" y="72" width="736" height="64" rx="22" fill="#111827"/>
+  <circle cx="124" cy="104" r="8" fill="#22d3ee"/>
+  <circle cx="150" cy="104" r="8" fill="#34d399"/>
+  <circle cx="176" cy="104" r="8" fill="#818cf8"/>
+  <rect x="118" y="176" width="245" height="142" rx="18" fill="url(#accent)"/>
+  <rect x="144" y="209" width="112" height="14" rx="7" fill="#ecfeff" opacity="0.9"/>
+  <rect x="144" y="252" width="178" height="28" rx="14" fill="#020617" opacity="0.28"/>
+  <rect x="400" y="176" width="360" height="142" rx="18" fill="#020617" stroke="#1e293b"/>
+  <path d="M430 279 C472 214 522 259 560 218 C596 178 640 212 676 174 C702 146 732 158 748 138" fill="none" stroke="#22d3ee" stroke-width="8" stroke-linecap="round"/>
+  <rect x="118" y="356" width="642" height="34" rx="10" fill="#1e293b"/>
+  <rect x="118" y="410" width="642" height="34" rx="10" fill="#172033"/>
+  <rect x="118" y="464" width="642" height="34" rx="10" fill="#1e293b"/>
+  <rect x="145" y="368" width="170" height="10" rx="5" fill="#94a3b8"/>
+  <rect x="145" y="422" width="220" height="10" rx="5" fill="#94a3b8"/>
+  <rect x="145" y="476" width="150" height="10" rx="5" fill="#94a3b8"/>
+  <rect x="632" y="368" width="88" height="10" rx="5" fill="#34d399"/>
+  <rect x="632" y="422" width="88" height="10" rx="5" fill="#22d3ee"/>
+  <rect x="632" y="476" width="88" height="10" rx="5" fill="#34d399"/>
+</svg>
