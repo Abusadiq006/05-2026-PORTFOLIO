@@ -30,3 +30,7 @@ export async function sendContactEmail(
   if (!message || message.trim().length < 10) {
     errors.message = "Message must be at least 10 characters long.";
   }
+
+  if (Object.keys(errors).length > 0) {
+    return { success: false, message: "Validation failed.", errors };
+  }
