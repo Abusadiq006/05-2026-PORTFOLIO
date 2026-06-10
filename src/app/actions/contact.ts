@@ -24,3 +24,6 @@ export async function sendContactEmail(
 
   // 1. Pro Validation (Simple but strict)
   const errors: ActionState["errors"] = {}
+  if (!email || !email.includes("@")) {
+    errors.email = "Please enter a valid email address.";
+  }
