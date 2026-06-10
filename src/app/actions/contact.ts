@@ -58,3 +58,5 @@ export async function sendContactEmail(
       console.error("Resend error:", error);
       return { success: false, message: "Failed to send email. Try again later." };
     }
+    return { success: true, message: "Your message has been sent successfully!" };
+  } catch (err) {
