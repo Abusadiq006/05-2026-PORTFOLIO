@@ -21,3 +21,6 @@ export async function sendContactEmail(
 ): Promise<ActionState> {
   const email = formData.get("email") as string
   const message = formData.get("message") as string
+
+  // 1. Pro Validation (Simple but strict)
+  const errors: ActionState["errors"] = {}
