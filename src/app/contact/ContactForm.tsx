@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { AlertTriangle, CheckCircle2, Send } from "lucide-react";
-import { sendContactEmail } from "@/app/actions/contact";
+import { sendContactEmail } from "@/app/contact/contact";
 
 export default function Contact() {
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
