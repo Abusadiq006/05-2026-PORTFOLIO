@@ -1,7 +1,7 @@
 import Hero from "@/components/Hero"
 import WorkSection from "@/components/WorkSection"
 import Expertise from "@/components/Expertise"
-import Contact from "@/components/Contact"
+import Contact from "@/app/contact/ContactForm"
 
 export default function Home() {
   return(
@@ -9,7 +9,7 @@ export default function Home() {
       <Hero />
       <Expertise />
       <WorkSection />
-      <Contact />
+      <ContactForm />
     </main>
   )
 }
