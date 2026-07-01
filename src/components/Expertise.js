@@ -1,11 +1,21 @@
 "use client"
+
 import React from "react"
 import { motion } from "framer-motion"
 
 const PRINCIPLES = [
-  { title: "Data Integrity & Security", desc: "Enforcing bulletproof relational schemas, strict authentication guards, and secure payment webhook verification chains." },
-  { title: "Performance-First Architecture", desc: "Optimizing Core Web Vitals using Next.js Server Components, strict route caching, and ultra-fast asset delivery." },
-  { title: "Test-Driven Resiliency", desc: "Validating API endpoints via structured testing environments like Postman and Insomnia to maintain flawless uptimes." }
+  { 
+    title: "Data Integrity & Security", 
+    desc: "Enforcing bulletproof relational schemas, strict authentication guards, and secure payment webhook verification chains." 
+  },
+  { 
+    title: "Performance-First Architecture", 
+    desc: "Optimizing Core Web Vitals using Next.js Server Components, strict route caching, and ultra-fast asset delivery." 
+  },
+  { 
+    title: "Test-Driven Resiliency", 
+    desc: "Validating API endpoints via structured testing environments like Postman and Insomnia to maintain flawless uptimes." 
+  }
 ]
 
 const SKILL_CATEGORIES = [
@@ -28,16 +38,23 @@ export default function Expertise() {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
-      transition: { staggerChildren: 0.1, delayChildren: 0.1 }
+      transition: { 
+        staggerChildren: 0.1, 
+        delayChildren: 0.1 
+      }
     }
   }
 
-const itemVariants = {
+  const itemVariants = {
     hidden: { opacity: 0, y: 20 },
     visible: {
       opacity: 1,
       y: 0,
-      transition: { type: "spring", stiffness: 60, damping: 12 }
+      transition: { 
+        type: "spring", 
+        stiffness: 60, 
+        damping: 12 
+      }
     }
   }
 
@@ -62,33 +79,37 @@ const itemVariants = {
             I build systems that scale cleanly without breaking under heavy loads. Bridging the gap between bulletproof backend pipelines and hyper-responsive user interfaces, I specialize in shipping end-to-end applications designed for production stability.
           </p>
 
-            <div className="space-y-6 pt-4">
+          <div className="space-y-6 pt-4">
             {PRINCIPLES.map((p, idx) => (
               <div key={idx} className="border-l-2 border-slate-800 hover:border-cyan-500 pl-4 transition-colors duration-300 py-1">
-                <h4 className="text-sm font-mono text-slate-200 font-semibold uppercase tracking-wider">{p.title}</h4>
+                <h3 className="text-sm font-mono text-slate-200 font-semibold uppercase tracking-wider">{p.title}</h3>
                 <p className="text-xs sm:text-sm text-slate-400 mt-1.5 leading-relaxed">{p.desc}</p>
               </div>
             ))}
-            </div>
-            </motion.div>
+          </div>
+        </motion.div>
 
-            {/* RIGHT COLUMN: Categorized Tech Stack Matrix */}
-            <motion.div 
-              variants={containerVariants}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, margin: "-100px" }}
-              className="lg:col-span-7 space-y-8 lg:pl-6"
-            >
-              <div className="space-y-2">
+        {/* RIGHT COLUMN: Categorized Tech Stack Matrix */}
+        <motion.div 
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-100px" }}
+          className="lg:col-span-7 space-y-8 lg:pl-6"
+        >
+          <div className="space-y-2">
             <span className="text-xs font-mono uppercase tracking-widest text-indigo-400">SYS // PRODUCTION TOOLBELT</span>
-            <h3 className="text-2xl font-bold text-white">Technological Matrix</h3>
-            </div>
+            <h2 className="text-2xl font-bold text-white">Technological Matrix</h2>
+          </div>
 
-            <div className="space-y-8">
+          <div className="space-y-8">
             {SKILL_CATEGORIES.map((category, catIdx) => (
-              <motion.div variants={itemVariants} key={catIdx} className="space-y-3 bg-slate-900/20 border border-slate-900 p-5 rounded-2xl">
-                <h4 className="text-xs font-mono text-slate-500 uppercase tracking-widest font-bold">{category.title}</h4>
+              <motion.div 
+                variants={itemVariants} 
+                key={catIdx} 
+                className="space-y-3 bg-slate-900/20 border border-slate-900 p-5 rounded-2xl"
+              >
+                <h3 className="text-xs font-mono text-slate-500 uppercase tracking-widest font-bold">{category.title}</h3>
                 <div className="flex flex-wrap gap-2.5">
                   {category.skills.map((skill, skillIdx) => (
                     <span 
@@ -99,12 +120,12 @@ const itemVariants = {
                     </span>
                   ))}
                 </div>
-                </motion.div>
-                ))}
-              </div>
-            </motion.div>
+              </motion.div>
+            ))}
+          </div>
+        </motion.div>
 
-            </div>
+      </div>
     </section>
   );
 }
