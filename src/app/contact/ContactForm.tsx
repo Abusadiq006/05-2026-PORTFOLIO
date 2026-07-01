@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useActionState } from "react";
+import React, { useActionState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { AlertTriangle, CheckCircle2, Send } from "lucide-react";
 import { sendContactEmail, ActionState } from "./contact";
@@ -13,6 +13,16 @@ const initialState: ActionState = {
 export default function ContactForm() {
   // useActionState handles pending states and errors automatically from your contact.ts
   const [state, formAction, isPending] = useActionState(sendContactEmail, initialState);
+  
+  // Reference hook to target the native form element for reset control operations
+  const formRef = useRef<HTMLFormElement>(null);
+
+  // Automatically reset the form inputs only when the server action flags a true success state
+  useEffect(() => {
+    if (state.success && formRef.current) {
+      formRef.current.reset();
+    }
+  }, [state.success]);
 
   // Animation configuration for validation message entries
   const errorVariants = {
@@ -65,8 +75,8 @@ export default function ContactForm() {
             viewport={{ once: true }}
             className="bg-slate-900/30 border border-slate-800/80 rounded-lg p-6 sm:p-8 backdrop-blur-md relative"
           >
-            {/* The action prop links directly to your Server Action */}
-            <form action={formAction} className="space-y-6">
+            {/* Attached formRef to enable programmatic clear states */}
+            <form ref={formRef} action={formAction} className="space-y-6">
               
               {/* Name Field */}
               <div className="space-y-1.5">
@@ -138,6 +148,7 @@ export default function ContactForm() {
               <AnimatePresence mode="wait">
                 {state.message && !state.errors && (
                   <motion.div
+                    key={state.success ? "success" : "error"}
                     initial={{ opacity: 0, scale: 0.95 }}
                     animate={{ opacity: 1, scale: 1 }}
                     exit={{ opacity: 0, scale: 0.95 }}
