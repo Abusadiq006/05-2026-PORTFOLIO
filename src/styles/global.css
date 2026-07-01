@@ -1,31 +1,35 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-@layer base {
-  :root {
-    --font-geist-sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    --font-geist-mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
-  }
+@theme {
+  /* Registering your theme variables for Tailwind v4 engine utility mapping */
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-mono: var(--font-geist-mono), "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  
+  /* Adding your slow pulse custom animation */
+  --animate-pulse-slow: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
 
-  html {
-    scroll-behavior: smooth;
-    background-color: #020617; /* Slate-950 */
-    color: #f8fafc; /* Slate-50 */
-  }
+/* Global Native Element Adjustments */
+html {
+  scroll-behavior: smooth;
+  background-color: #020617; /* Slate-950 */
+  color: #f8fafc; /* Slate-50 */
+}
 
-  /* Custom high-performance premium custom scrollbar */
-  ::-webkit-scrollbar {
-    width: 8px;
-  }
-  ::-webkit-scrollbar-track {
-    background: #020617;
-  }
-  ::-webkit-scrollbar-thumb {
-    background: #1e293b; /* Slate-800 */
-    border-radius: 4px;
-  }
-  ::-webkit-scrollbar-thumb:hover {
-    background: #0ea5e9; /* Cyan-500 Accent Hook */
-  }
+/* Premium Webkit Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #020617;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e293b; /* Slate-800 */
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0ea5e9; /* Sky-500 Accent Hook */
 }
