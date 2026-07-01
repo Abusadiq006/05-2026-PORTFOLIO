@@ -32,6 +32,7 @@ export default function Hero() {
 
   return (
     <section className="relative min-h-[90vh] flex flex-col justify-center items-center px-4 sm:px-8 lg:px-16 overflow-hidden bg-slate-950 text-slate-100 border-b border-slate-900">
+      {/* Background Radial Light Source */}
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-gradient-to-tr from-cyan-500/10 to-emerald-500/10 rounded-full blur-[120px] pointer-events-none animate-pulse-slow" />
 
       <motion.div
@@ -40,6 +41,7 @@ export default function Hero() {
         animate="visible"
         className="max-w-5xl w-full space-y-8 z-10 text-center lg:text-left"
       >
+        {/* Accent Tag */}
         <motion.div variants={itemVariants} className="flex items-center justify-center lg:justify-start gap-3">
           <span className="w-2 h-2 rounded-full bg-cyan-400 animate-ping" />
           <span className="text-xs font-mono tracking-widest text-cyan-400 uppercase">
@@ -47,6 +49,7 @@ export default function Hero() {
           </span>
         </motion.div>
 
+        {/* Main Header Tag */}
         <motion.h1
           variants={itemVariants}
           className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight leading-[1.1] text-transparent bg-clip-text bg-gradient-to-b from-white via-slate-100 to-slate-400 max-w-4xl"
@@ -54,6 +57,7 @@ export default function Hero() {
           {HERO_DATA.mainTitle}
         </motion.h1>
 
+        {/* Subtitle Paragraph */}
         <motion.p
           variants={itemVariants}
           className="text-base sm:text-lg md:text-xl text-slate-400 font-normal max-w-2xl leading-relaxed mx-auto lg:mx-0"
@@ -61,6 +65,7 @@ export default function Hero() {
           {HERO_DATA.subTitle}
         </motion.p>
 
+        {/* Primary and Secondary Actions */}
         <motion.div variants={itemVariants} className="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-4">
           <a
             href="#projects"
@@ -76,6 +81,7 @@ export default function Hero() {
           </a>
         </motion.div>
 
+        {/* Operational Metrics Matrix */}
         <motion.div
           variants={itemVariants}
           className="pt-16 border-t border-slate-900 grid grid-cols-1 sm:grid-cols-3 gap-6 text-left max-w-3xl"
