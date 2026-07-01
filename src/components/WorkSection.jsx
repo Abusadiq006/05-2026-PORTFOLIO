@@ -10,6 +10,8 @@ export default function WorkSection() {
   return (
     <section id="projects" className="min-h-screen bg-slate-950 text-slate-100 py-20 px-4 sm:px-8 lg:px-16 border-t border-slate-900">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+        
+        {/* LEFT COLUMN: Sticky Bio Card */}
         <div className="lg:col-span-4 lg:sticky lg:top-28 space-y-6">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -46,6 +48,7 @@ export default function WorkSection() {
           </motion.div>
         </div>
 
+        {/* RIGHT COLUMN: Production Applications List */}
         <div className="lg:col-span-8 space-y-12">
           <div className="space-y-2 mb-8">
             <span className="text-xs font-mono uppercase tracking-widest text-cyan-500">02 // Selected Work</span>
@@ -61,6 +64,7 @@ export default function WorkSection() {
               transition={{ duration: 0.6, delay: index * 0.1, ease: "easeOut" }}
               className="bg-slate-900/20 border border-slate-800/60 rounded-lg overflow-hidden hover:border-slate-700/80 transition-all duration-300 flex flex-col md:flex-row group shadow-xl"
             >
+              {/* Cover Art Frame */}
               <div className="md:w-2/5 relative bg-slate-950 overflow-hidden min-h-[220px]">
                 <Image
                   src={project.image}
@@ -74,12 +78,14 @@ export default function WorkSection() {
                 </div>
               </div>
 
+              {/* Data and Details Card */}
               <div className="p-6 sm:p-8 md:w-3/5 flex flex-col justify-between space-y-6">
                 <div>
                   <span className="text-xs font-mono text-cyan-400 tracking-wider uppercase">{project.category}</span>
-                  <h4 className="text-2xl font-bold text-white mt-1 group-hover:text-cyan-300 transition-colors duration-200">{project.title}</h4>
+                  <h3 className="text-2xl font-bold text-white mt-1 group-hover:text-cyan-300 transition-colors duration-200">{project.title}</h3>
                   <p className="text-sm text-slate-400 mt-3 leading-relaxed">{project.description}</p>
 
+                  {/* Built-with Matrix Tags */}
                   <div className="mt-4 flex flex-wrap gap-2">
                     {project.frontend.map((tech) => (
                       <span key={tech} className="bg-slate-800/50 text-slate-300 px-2.5 py-0.5 rounded-md text-xs border border-slate-700/30 font-mono">{tech}</span>
@@ -90,6 +96,7 @@ export default function WorkSection() {
                   </div>
                 </div>
 
+                {/* External Routing Anchors */}
                 <div className="flex items-center gap-4 pt-4 border-t border-slate-800/50">
                   <a
                     href={project.liveUrl}
@@ -112,6 +119,7 @@ export default function WorkSection() {
             </motion.div>
           ))}
         </div>
+
       </div>
     </section>
   );
