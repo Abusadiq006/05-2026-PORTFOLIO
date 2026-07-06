@@ -2,7 +2,7 @@ import Hero from "@/components/Hero"
 import WorkSection from "@/components/WorkSection"
 import Expertise from "@/components/Expertise"
 import Contact from "@/app/contact/ContactForm"
-import Globals from "@/src/style/globals"
+
 
 export default function Home() {
   return(
@@ -11,7 +11,6 @@ export default function Home() {
       <Expertise />
       <WorkSection />
       <Contact />
-      <Globals />
     </main>
   )
 }
