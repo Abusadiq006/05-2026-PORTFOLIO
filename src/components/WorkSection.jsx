@@ -23,16 +23,14 @@ export default function WorkSection() {
             <div className="absolute -inset-0.5 bg-gradient-to-r from-emerald-500 to-cyan-500 rounded-lg opacity-0 group-hover:opacity-5 transition duration-700 blur" />
 
             <div className="relative w-full aspect-square rounded-lg overflow-hidden bg-slate-800 border border-slate-700/50 mb-6">
-              {/* NEW: Your actual profile picture replacing the gradient background */}
               <Image
-                src="/abusadiq.jpg" // Make sure your photo is saved in your public folder with this exact name!
+                src="/abusadiq.jpg"
                 alt="Abusadiq - Full Stack Engineer"
                 fill
                 priority
                 className="object-cover object-center grayscale hover:grayscale-0 transition-all duration-500 ease-in-out"
               />
             
-              {/* Keep your sleek System: Active badge floating right on top of the photo */}
               <div className="absolute bottom-3 right-3 bg-slate-950/80 backdrop-blur-md border border-emerald-500/30 px-3 py-1.5 rounded-full flex items-center gap-2 z-10">
                 <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
                 <span className="text-xs uppercase tracking-wider font-mono text-emerald-400">System: Active</span>
@@ -59,7 +57,8 @@ export default function WorkSection() {
             <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-white">Production-Minded Applications</h2>
           </div>
 
-          {PROJECTS.map((project, index) => (
+          {/* ADDED: "?." to PROJECTS to prevent undefined rendering crashes */}
+          {PROJECTS?.map((project, index) => (
             <motion.div
               key={project.id}
               initial={{ opacity: 0, y: 40 }}
@@ -91,10 +90,11 @@ export default function WorkSection() {
 
                   {/* Built-with Matrix Tags */}
                   <div className="mt-4 flex flex-wrap gap-2">
-                    {project.frontend.map((tech) => (
+                    {/* ADDED: "?." to both mapping loops to prevent crashes on individual project properties */}
+                    {project.frontend?.map((tech) => (
                       <span key={tech} className="bg-slate-800/50 text-slate-300 px-2.5 py-0.5 rounded-md text-xs border border-slate-700/30 font-mono">{tech}</span>
                     ))}
-                    {project.backend.map((tech) => (
+                    {project.backend?.map((tech) => (
                       <span key={tech} className="bg-slate-950 text-cyan-400/90 px-2.5 py-0.5 rounded-md text-xs border border-cyan-950 font-mono">{tech}</span>
                     ))}
                   </div>

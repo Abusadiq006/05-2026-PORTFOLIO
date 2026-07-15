@@ -19,7 +19,7 @@ export const PROJECTS = [
     backend: ["Node.js", "Express.js", "Supabase Auth"],
     testing: "Postman Verified",
     liveUrl: "https://movie-website-cine-hub.vercel.app/",
-    githubUrl: "https://github.com/Abusadiq006/movie-cinehub-hub",
+    githubUrl: "https://github.com/Abusadiq006/Movie-Website-CineHub-",
     image: "/CineHub.png"
   },
   {
@@ -29,7 +29,7 @@ export const PROJECTS = [
     description: "A full-stack agricultural production management system built to streamline farm-to-table operations. Features real-time harvest logging, automated inventory tracking, and payment gateways built for direct supply-chain sales.",
     frontend: ["React.js", "TailwindCSS", "HTML5"],
     backend: ["Node.js", "Express.js", "MongoDB"],
-    testing: "Insomnia Verified",
+    testing: "Postman",
     liveUrl: "https://farm-app-iota-livid.vercel.app/",
     githubUrl: "https://github.com/Abusadiq006/farmapp",
     image: "/GreenFarm.png"
@@ -40,7 +40,6 @@ export const PROJECTS = [
     category: "CreatorVerse Platform",
     description: "An interactive e-learning platform specifically designed for content creators. Integrates rich media streaming courses, progress tracking, and structured learning tracks built on a scalable Node and Express backend architecture.",
     frontend: ["React.js", "TailwindCSS", "HTML5"],
-    backend: ["Node.js", "Express.js", "MongoDB"],
     testing: "Insomnia Verified",
     liveUrl: "https://e-learning-platform-for-content-cre.vercel.app/",
     githubUrl: "https://github.com/Abusadiq006/E-learning-platform-for-content-creation",
@@ -53,9 +52,9 @@ export const PROJECTS = [
     description: "A next-generation web platform built with a modular component architecture. Focused on high SEO performance, lightning-fast client transitions, and secure API database handshakes.",
     frontend: ["React.js", "TailwindCSS", "HTML5"],
     backend: ["Node.js", "Express.js", "MongoDB"],
-    testing: "Insomnia Verified",
-    liveUrl: "https://e-learning-platform-for-content-cre.vercel.app/",
-    githubUrl: "https://github.com/Abusadiq006/farmapp",
+    testing: "Postman",
+    liveUrl: "https://nexora-kohl-nu.vercel.app/",
+    githubUrl: "https://github.com/Abusadiq006/nexora",
     image: "/Nexora.png"
   },
   {
@@ -64,10 +63,9 @@ export const PROJECTS = [
     category: "Zharah Platform",
     description: "A dynamic web application built for a non-governmental organization (NGO). Designed with access-friendly layouts, clean donation workflow integrations, and a robust administrative backend panel for managing programs.",
     frontend: ["React.js", "TailwindCSS", "HTML5"],
-    backend: ["Node.js", "Express.js", "MongoDB"],
     testing: "Insomnia Verified",
     liveUrl: "https://zharah-sd-ngo.vercel.app/",
-    githubUrl: "https://github.com/Abusadiq006/far33",
+    githubUrl: "https://github.com/Abusadiq006/Zharah-SD-NGO",
     image: "/Zharah SD.png"
   }
 ]
