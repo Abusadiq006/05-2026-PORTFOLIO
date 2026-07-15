@@ -56,6 +56,18 @@ export const PROJECTS = [
     testing: "Insomnia Verified",
     liveUrl: "https://e-learning-platform-for-content-cre.vercel.app/",
     githubUrl: "https://github.com/Abusadiq006/farmapp",
-    image: "/CreatorVerse.png"
+    image: "/Nexora.png"
   },
+  {
+    id: 5,
+    title: "Zharah SD",
+    category: "Zharah Platform",
+    description: "A full-stack agricultural production management system with payment integrations, harvest tracking, and supply-chain sales workflows.",
+    frontend: ["React.js", "TailwindCSS", "HTML5"],
+    backend: ["Node.js", "Express.js", "MongoDB"],
+    testing: "Insomnia Verified",
+    liveUrl: "https://zharah-sd-ngo.vercel.app/",
+    githubUrl: "https://github.com/Abusadiq006/far33",
+    image: "/Zharah SD.png"
+  }
 ]
