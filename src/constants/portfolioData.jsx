@@ -33,5 +33,18 @@ export const PROJECTS = [
     liveUrl: "https://farm-app-iota-livid.vercel.app/",
     githubUrl: "https://github.com/Abusadiq006/farmapp",
     image: "/GreenFarm.png"
-  }
+  },
+  {
+    id: 3,
+    title: "CreatorVerse",
+    category: "CreatorVerse Platform",
+    description: "A full-stack agricultural production management system with payment integrations, harvest tracking, and supply-chain sales workflows.",
+    frontend: ["React.js", "TailwindCSS", "HTML5"],
+    backend: ["Node.js", "Express.js", "MongoDB"],
+    testing: "Insomnia Verified",
+    liveUrl: "https://e-learning-platform-for-content-cre.vercel.app/",
+    githubUrl: "https://github.com/Abusadiq006/farmapp",
+    image: "/CreatorVerse.png"
+  },
+  
 ]
