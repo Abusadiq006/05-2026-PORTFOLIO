@@ -23,21 +23,21 @@ export default function WorkSection() {
             <div className="absolute -inset-0.5 bg-gradient-to-r from-emerald-500 to-cyan-500 rounded-lg opacity-0 group-hover:opacity-5 transition duration-700 blur" />
 
             <div className="relative w-full aspect-square rounded-lg overflow-hidden bg-slate-800 border border-slate-700/50 mb-6">
-  {/* NEW: Your actual profile picture replacing the gradient background */}
-  <Image
-    src="/abusadiq.jpg" // Make sure your photo is saved in your public folder with this exact name!
-    alt="Abusadiq - Full Stack Engineer"
-    fill
-    priority
-    className="object-cover object-center grayscale hover:grayscale-0 transition-all duration-500 ease-in-out"
-  />
-
-  {/* Keep your sleek System: Active badge floating right on top of the photo */}
-  <div className="absolute bottom-3 right-3 bg-slate-950/80 backdrop-blur-md border border-emerald-500/30 px-3 py-1.5 rounded-full flex items-center gap-2 z-10">
-    <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-    <span className="text-xs uppercase tracking-wider font-mono text-emerald-400">System: Active</span>
-  </div>
-</div>
+              {/* NEW: Your actual profile picture replacing the gradient background */}
+              <Image
+                src="/abusadiq.jpg" // Make sure your photo is saved in your public folder with this exact name!
+                alt="Abusadiq - Full Stack Engineer"
+                fill
+                priority
+                className="object-cover object-center grayscale hover:grayscale-0 transition-all duration-500 ease-in-out"
+              />
+            
+              {/* Keep your sleek System: Active badge floating right on top of the photo */}
+              <div className="absolute bottom-3 right-3 bg-slate-950/80 backdrop-blur-md border border-emerald-500/30 px-3 py-1.5 rounded-full flex items-center gap-2 z-10">
+                <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+                <span className="text-xs uppercase tracking-wider font-mono text-emerald-400">System: Active</span>
+              </div>
+            </div>
 
             <h3 className="text-2xl font-bold tracking-tight text-white">Abusadiq</h3>
             <p className="text-sm font-mono text-cyan-400 mt-1">Full-Stack Software Engineer</p>

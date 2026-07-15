@@ -12,15 +12,15 @@ export const HERO_DATA = {
 export const PROJECTS = [
     {
     id: 1,
-    title: "BridgePay Dashboard",
-    category: "Fintech Architecture",
+    title: "CineHub",
+    category: "CineHub Platform",
     description: "A wedding vendor payment and budget management platform with multi-party payout workflows, real-time ledger tracking, and clean dashboard interactions.",
     frontend: ["Next.js", "TailwindCSS", "React", "Framer Motion"],
     backend: ["Node.js", "Express.js", "Supabase Auth"],
     testing: "Postman Verified",
-    liveUrl: "https://bridgepay-dashboard.vercel.app",
-    githubUrl: "https://github.com/Abusadiq006/bridge-pay-dashboard",
-    image: "/project-bridgepay.svg"
+    liveUrl: "https://movie-website-cine-hub.vercel.app/",
+    githubUrl: "https://github.com/Abusadiq006/movie-cinehub-hub",
+    image: "/CineHub.png"
   },
   {
     id: 2,
@@ -30,8 +30,8 @@ export const PROJECTS = [
     frontend: ["React.js", "TailwindCSS", "HTML5"],
     backend: ["Node.js", "Express.js", "MongoDB"],
     testing: "Insomnia Verified",
-    liveUrl: "https://farmapp.vercel.app",
+    liveUrl: "https://farm-app-iota-livid.vercel.app/",
     githubUrl: "https://github.com/Abusadiq006/farmapp",
-    image: "/project-farmapp.svg"
+    image: "/GreenFarm.png"
   }
 ]
