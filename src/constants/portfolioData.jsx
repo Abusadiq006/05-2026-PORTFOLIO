@@ -10,11 +10,11 @@ export const HERO_DATA = {
 }
 
 export const PROJECTS = [
-    {
+  {
     id: 1,
     title: "CineHub",
     category: "CineHub Platform",
-    description: "A wedding vendor payment and budget management platform with multi-party payout workflows, real-time ledger tracking, and clean dashboard interactions.",
+    description: "A high-performance movie discovery and streaming web application. Features modern content carousels, dynamic search filtering, and user authentication powered by Supabase, backed by a robust API routing structure.",
     frontend: ["Next.js", "TailwindCSS", "React", "Framer Motion"],
     backend: ["Node.js", "Express.js", "Supabase Auth"],
     testing: "Postman Verified",
@@ -26,7 +26,7 @@ export const PROJECTS = [
     id: 2,
     title: "FarmApp Ecosystem",
     category: "Agritech Platform",
-    description: "A full-stack agricultural production management system with payment integrations, harvest tracking, and supply-chain sales workflows.",
+    description: "A full-stack agricultural production management system built to streamline farm-to-table operations. Features real-time harvest logging, automated inventory tracking, and payment gateways built for direct supply-chain sales.",
     frontend: ["React.js", "TailwindCSS", "HTML5"],
     backend: ["Node.js", "Express.js", "MongoDB"],
     testing: "Insomnia Verified",
@@ -38,7 +38,7 @@ export const PROJECTS = [
     id: 3,
     title: "CreatorVerse",
     category: "CreatorVerse Platform",
-    description: "A full-stack agricultural production management system with payment integrations, harvest tracking, and supply-chain sales workflows.",
+    description: "An interactive e-learning platform specifically designed for content creators. Integrates rich media streaming courses, progress tracking, and structured learning tracks built on a scalable Node and Express backend architecture.",
     frontend: ["React.js", "TailwindCSS", "HTML5"],
     backend: ["Node.js", "Express.js", "MongoDB"],
     testing: "Insomnia Verified",
@@ -50,7 +50,7 @@ export const PROJECTS = [
     id: 4,
     title: "Nexora",
     category: "Nexora Platform",
-    description: "A full-stack agricultural production management system with payment integrations, harvest tracking, and supply-chain sales workflows.",
+    description: "A next-generation web platform built with a modular component architecture. Focused on high SEO performance, lightning-fast client transitions, and secure API database handshakes.",
     frontend: ["React.js", "TailwindCSS", "HTML5"],
     backend: ["Node.js", "Express.js", "MongoDB"],
     testing: "Insomnia Verified",
@@ -62,7 +62,7 @@ export const PROJECTS = [
     id: 5,
     title: "Zharah SD",
     category: "Zharah Platform",
-    description: "A full-stack agricultural production management system with payment integrations, harvest tracking, and supply-chain sales workflows.",
+    description: "A dynamic web application built for a non-governmental organization (NGO). Designed with access-friendly layouts, clean donation workflow integrations, and a robust administrative backend panel for managing programs.",
     frontend: ["React.js", "TailwindCSS", "HTML5"],
     backend: ["Node.js", "Express.js", "MongoDB"],
     testing: "Insomnia Verified",
