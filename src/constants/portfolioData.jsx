@@ -3,9 +3,10 @@ export const HERO_DATA = {
     mainTitle: "Building Reliable Products With Motion, Clarity, and Clean Architecture",
     subTitle: "Full-stack software engineer focused on resilient APIs, secure integrations, and polished interfaces that feel fast, useful, and memorable.",
     metrics: [
-        { label: "Frontend Engines", value: "Next.js / React / Vue" },
+        { label: "Frontend Engines", value: "React / Vue / Next.js" },
         { label: "Backend Core", value: "Node.js / Nest.js / Express" },
-        { label: "Data Integrity", value: "Supabase / Mongo / Firebase" }
+        { label: "Data Integrity", value: "Supabase / Mongo / Firebase" },
+        { label: "Api", value: "TMDB / Resend"}
     ]
 }
 
