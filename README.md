@@ -50,7 +50,7 @@ The repository implements strict modular layout architectures for clean separati
 │   ├── constants/              # Global variables and project configurations
 │   │   └── portfolioData.js    # Data source arrays for dynamic mappings
 │   └── styles/
-│       └── globals.css         # Tailwind directives & theme configuration
+│       └── global.css         # Tailwind directives & theme configuration
 ├── public/                     # Static assets (images, profile graphics)
 ├── jsconfig.json               # Absolute import mappings (@/* -> src/*)
 └── package.json                # Project dependencies and deployment scripts
