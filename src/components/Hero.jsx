@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { ArrowDown, Send } from "lucide-react";
 import { HERO_DATA } from "@/constants/portfolioData";
@@ -39,63 +40,78 @@ export default function Hero() {
         variants={containerVariants}
         initial="hidden"
         animate="visible"
-        className="max-w-5xl w-full space-y-8 z-10 text-center lg:text-left"
+        className="max-w-6xl w-full z-10 grid items-center gap-12 lg:grid-cols-[minmax(0,1fr)_320px] text-center lg:text-left"
       >
-        {/* Accent Tag */}
-        <motion.div variants={itemVariants} className="flex items-center justify-center lg:justify-start gap-3">
-          <span className="w-2 h-2 rounded-full bg-cyan-400 animate-ping" />
-          <span className="text-xs font-mono tracking-widest text-cyan-400 uppercase">
-            {HERO_DATA.accent}
-          </span>
-        </motion.div>
+        <div className="space-y-8">
+          {/* Accent Tag */}
+          <motion.div variants={itemVariants} className="flex items-center justify-center lg:justify-start gap-3">
+            <span className="w-2 h-2 rounded-full bg-cyan-400 animate-ping" />
+            <span className="text-xs font-mono tracking-widest text-cyan-400 uppercase">
+              {HERO_DATA.accent}
+            </span>
+          </motion.div>
 
-        {/* Main Header Tag */}
-        <motion.h1
-          variants={itemVariants}
-          className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight leading-[1.1] text-transparent bg-clip-text bg-gradient-to-b from-white via-slate-100 to-slate-400 max-w-4xl"
-        >
-          {HERO_DATA.mainTitle}
-        </motion.h1>
-
-        {/* Subtitle Paragraph */}
-        <motion.p
-          variants={itemVariants}
-          className="text-base sm:text-lg md:text-xl text-slate-400 font-normal max-w-2xl leading-relaxed mx-auto lg:mx-0"
-        >
-          {HERO_DATA.subTitle}
-        </motion.p>
-
-        {/* Primary and Secondary Actions */}
-        <motion.div variants={itemVariants} className="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-4">
-          <a
-            href="#projects"
-            className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-white text-slate-950 font-medium text-sm hover:bg-cyan-400 transition-all duration-300 shadow-lg shadow-cyan-500/5 transform hover:-translate-y-0.5 active:translate-y-0"
+          {/* Main Header Tag */}
+          <motion.h1
+            variants={itemVariants}
+            className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight leading-[1.1] text-transparent bg-clip-text bg-gradient-to-b from-white via-slate-100 to-slate-400 max-w-4xl"
           >
-            Explore Projects <ArrowDown size={16} aria-hidden="true" />
-          </a>
-          <a
-            href="#contact"
-            className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-slate-900 border border-slate-800 text-slate-300 font-medium text-sm hover:bg-slate-800 hover:text-white transition-all duration-300 font-mono"
-          >
-            Start a Conversation <Send size={15} aria-hidden="true" />
-          </a>
-        </motion.div>
+            {HERO_DATA.mainTitle}
+          </motion.h1>
 
-        {/* Operational Metrics Matrix */}
-        <motion.div
-          variants={itemVariants}
-          className="pt-16 border-t border-slate-900 grid grid-cols-1 sm:grid-cols-3 gap-6 text-left max-w-3xl"
-        >
-          {HERO_DATA.metrics.map((metric) => (
-            <div key={metric.label} className="space-y-1 group">
-              <div className="text-xs font-mono text-slate-500 uppercase tracking-wider">
-                {metric.label}
+          {/* Subtitle Paragraph */}
+          <motion.p
+            variants={itemVariants}
+            className="text-base sm:text-lg md:text-xl text-slate-400 font-normal max-w-2xl leading-relaxed mx-auto lg:mx-0"
+          >
+            {HERO_DATA.subTitle}
+          </motion.p>
+
+          {/* Primary and Secondary Actions */}
+          <motion.div variants={itemVariants} className="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-4">
+            <a
+              href="#projects"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-white text-slate-950 font-medium text-sm hover:bg-cyan-400 transition-all duration-300 shadow-lg shadow-cyan-500/5 transform hover:-translate-y-0.5 active:translate-y-0"
+            >
+              Explore Projects <ArrowDown size={16} aria-hidden="true" />
+            </a>
+            <a
+              href="#contact"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-slate-900 border border-slate-800 text-slate-300 font-medium text-sm hover:bg-slate-800 hover:text-white transition-all duration-300 font-mono"
+            >
+              Start a Conversation <Send size={15} aria-hidden="true" />
+            </a>
+          </motion.div>
+
+          {/* Operational Metrics Matrix */}
+          <motion.div
+            variants={itemVariants}
+            className="pt-16 border-t border-slate-900 grid grid-cols-1 sm:grid-cols-3 gap-6 text-left max-w-3xl"
+          >
+            {HERO_DATA.metrics.map((metric) => (
+              <div key={metric.label} className="space-y-1 group">
+                <div className="text-xs font-mono text-slate-500 uppercase tracking-wider">
+                  {metric.label}
+                </div>
+                <div className="text-sm font-semibold text-slate-300 group-hover:text-cyan-400 transition-colors duration-200">
+                  {metric.value}
+                </div>
               </div>
-              <div className="text-sm font-semibold text-slate-300 group-hover:text-cyan-400 transition-colors duration-200">
-                {metric.value}
-              </div>
-            </div>
-          ))}
+            ))}
+          </motion.div>
+        </div>
+
+        <motion.div variants={itemVariants} className="mx-auto w-56 sm:w-64 lg:w-80">
+          <div className="relative aspect-square overflow-hidden rounded-2xl border border-cyan-400/30 bg-slate-900 shadow-2xl shadow-cyan-500/10">
+            <Image
+              src="/Abusadiq.jpg"
+              alt="Farmer Abusadiq"
+              fill
+              sizes="(min-width: 1024px) 320px, (min-width: 640px) 256px, 224px"
+              className="object-cover"
+              priority
+            />
+          </div>
         </motion.div>
       </motion.div>
     </section>
